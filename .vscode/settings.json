@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": [
+    "source.formatDocument",
+    "source.fixAll.eslint"
+  ],
+  /**
+   * even using the editorconfig extension, some people who are using windows
+   * have inconsistencies regarding the end of line character, where vscode always
+   * tries to convert to CRLF disrespecting the settings of the .editorconfig file
+   */
+  "files.eol": "\n"
+}

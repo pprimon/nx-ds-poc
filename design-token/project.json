@@ -1,0 +1,19 @@
+{
+  "name": "design-token",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "design-token/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/design-token",
+        "main": "design-token/src/index.ts",
+        "tsConfig": "design-token/tsconfig.lib.json",
+        "assets": ["design-token/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
