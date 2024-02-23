@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npx nx run design-system:preview",
-    "dev:docs": "npx nx run design-system:storybook"
+    "dev:docs": "npx nx run design-system:storybook -p 6006"
   },
   "private": true,
   "dependencies": {
