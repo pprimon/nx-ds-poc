@@ -7,6 +7,7 @@
     "dev:docs": "npx nx run design-system:storybook -p 6006",
     "build": "nx build design-system"
   },
+  "main": "dist/apps/design-system/webpack-design-system.js",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
