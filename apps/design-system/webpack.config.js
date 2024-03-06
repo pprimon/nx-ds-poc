@@ -3,14 +3,8 @@ const { NxReactWebpackPlugin } = require('@nx/react');
 const { join } = require('path');
 
 module.exports = {
-  entry: './src/components/index.ts',
   output: {
     path: join(__dirname, '../../dist/apps/design-system'),
-    filename: 'webpack-design-system.js',
-    library: {
-      name: 'design-system"',
-      type: 'umd',
-    },
   },
   devServer: {
     port: 4200,
@@ -19,8 +13,7 @@ module.exports = {
     new NxWebpackPlugin({
       tsConfig: './tsconfig.app.json',
       compiler: 'babel',
-      main: './src/main.tsx',
-      index: './src/index.html',
+      main: './src/components/index.ts',
       baseHref: '/',
       outputHashing: process.env['NODE_ENV'] === 'production' ? 'all' : 'none',
       optimization: process.env['NODE_ENV'] === 'production',
