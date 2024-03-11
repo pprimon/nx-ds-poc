@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-poc/design-token": ["design-token/src/index.ts"]
+      "@nx-poc/design-token": ["design-token/src/index.ts"],
+      "@nx-poc/gupy-design-system": ["gupy-design-system/components/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

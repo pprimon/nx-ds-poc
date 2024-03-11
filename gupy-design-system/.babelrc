@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@nx/react/babel",
+      {
+        "runtime": "automatic",
+        "useBuiltIns": "usage"
+      }
+    ],
+    ["@babel/preset-env", { "targets": { "node": "14" } }],
+    "@babel/preset-react"
+  ],
+  "plugins": []
+}

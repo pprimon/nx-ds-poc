@@ -1,0 +1,29 @@
+{
+  "name": "gupy-design-system",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "gupy-design-system/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/gupy-design-system",
+        "tsConfig": "gupy-design-system/tsconfig.lib.json",
+        "project": "gupy-design-system/package.json",
+        "entryFile": "gupy-design-system/components/index.ts",
+        "external": ["react", "react-dom", "react/jsx-runtime"],
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "gupy-design-system/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}
